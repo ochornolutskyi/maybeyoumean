@@ -1,4 +1,4 @@
-FIXME: LOSS OF POSITION OF ELEMENT
+FIXME: LOSS OF POSITION OF ELEMENT //
 WHAT WAS FIXED: 
 1) you can change a word in the middle of the string; 
 2) the caret is focusing after changed word; 
