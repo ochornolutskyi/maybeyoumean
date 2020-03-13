@@ -3,15 +3,16 @@
     "version": "1.0",
     "manifest_version": 2,
     "icons": {
-     "128": "icon.png"
-  },
+        "128": "icon.png"
+    },
     "content_scripts": [
-      {
-        "matches": ["http://*/*", "https://*/*"],
-        "all_frames": true,
-	    "js": ["mym.js"],
-	    "run_at": "document_end"
-      }
-   ],
+        {
+            "matches": ["http://*/*", "https://*/*"],
+            "all_frames": true,
+            "js": ["mym.js"],
+            "css": ["mym.css"],
+            "run_at": "document_end"
+        }
+    ],
     "web_accessible_resources": ["mym.js"]
 }
