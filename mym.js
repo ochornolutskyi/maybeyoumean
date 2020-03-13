@@ -216,6 +216,14 @@ window.onload = () => {
         setTimeout(() => {
             document.getElementById("divOffers").style.opacity = "1";
         }, 100);
+        let child = document.getElementById("divOffers").children;
+        function missClick(event) {
+            if (event.target !== child) {
+                removeDivOffers();
+                window.removeEventListener("click", missClick);
+            }
+        }
+        window.addEventListener("click", missClick);
     };
     //removing offers
     const removeDivOffers = () => {
