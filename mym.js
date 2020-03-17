@@ -1,4 +1,3 @@
-window.onload = () => {
     const vocabulary = {
         Cat: ["Dog", "Rat", "bat"],
         Helo: ["hello", "Help", "Hell"],
@@ -275,4 +274,3 @@ window.onload = () => {
             }
         }
     });
-};
